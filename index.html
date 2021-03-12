@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    body {
+      font-family: serif;
+      font-size: 20px;
+    }
+
+    .main {
+      background-image: linear-gradient(to left bottom,
+          /*renk efekti ve bu efek nerden nereye değişsin*/
+          rgba(255, 102, 102, 0.7),
+          rgba(255, 230, 233, 0.1)), url("img/back.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+      background-attachment: fixed;
+      /*sabit arkaplann*/
+      position: relative;
+      transition: all 5s ease;
+
+    }
+
+
+    .swiper-container {
+      width: 80%;
+      padding-top: 150px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 250px;
+      height: 250px;
+    }
+
+    nav {
+      background-color:
+        rgba(238, 65, 73, 0.7);
+      border-bottom: 2px solid white;
+    }
+
+    .nav-item {
+      font-weight: bold;
+    }
+
+    .n {
+      transition: all 0.5s ease;
+      font-family: sans-serif;
+      transition: all 1s ease;
+
+    }
+
+    .n:hover {
+      box-shadow: black;
+      font-size: 17px;
+      background-color: rgb(48, 43, 43);
+      border-radius: 15px;
+    }
+
+    .btn {
+      transition: all 1s ease;
+    }
+
+    .btn:hover {
+      box-shadow: black;
+      color: white;
+      background-color: rgb(48, 43, 43);
+      border-radius: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: serif;
+      font-size: bold;
+      color: whitesmoke;
+      transition: all 2s ease;
+      font-size: 30px;
+      letter-spacing: 3px;
+    }
+
+
+    h1:hover {
+      font-size: 37px;
+      letter-spacing: 3px;
+      color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body class="main select">
+  <nav class="navbar navbar-expand-md navbar-dark justify-content-between fixed-top mb-5">
+
+    <a href="#" class="navbar-brand">
+      <img src="img/icon.png" style="width: 70px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsi">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsi">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ml-2"><a href="#" class="nav-link n">Coca Cola</a></li>
+        <li class="nav-item ml-2"><a href="#" class="nav-link n">Satış</a></li>
+        <li class="nav-item ml-2"><a href="#" class="nav-link n">İletişim</a></li>
+      </ul>
+      <form class="form-inline" style="float: inline-end;">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+  </nav>
+  <main class="select">
+    <div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(img/7.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/6.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/5.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/4.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/3.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/2.jfif)"></div>
+          <div class="swiper-slide" style="background-image:url(img/1.jpg)"></div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <br><br>
+
+    <div>
+      <h1>WELCOME TO COCA COLA !</h1>
+    </div>
+
+    <br><br><br><br><br>
+    <hr>
+    <div class="mx-3 mt-5">
+      <h2>Biz Kimiz</h2>
+      <p><b>Coca Cola</b> 1987 yılında Alaska'da doğmuştur.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat corrupti nesciunt ipsa? Exercitationem nobis
+        explicabo voluptas maiores excepturi natus laboriosam voluptatem voluptate quasi molestias accusamus minus
+        earum, et cum atque dolorem fugit magnam id. Quibusdam nobis pariatur accusamus laboriosam voluptatem.</p>
+    </div>
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mt-2">
+          <img src="img/4.jpg" style="border-radius: 15px; width: 450px;">
+        </div>
+        <div class="col-md-6">
+          <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, nihil eius! Enim earum facere ratione
+            molestiae beatae, ipsam, maiores quis illo fugit numquam cum unde nobis est voluptatibus tempora saepe illum
+            harum incidunt sit, esse vel omnis vero quidem voluptates? Sed eos similique, asperiores blanditiis nostrum
+            temporibus officia doloremque ut maxime ipsam molestias natus cumque, ullam tempora numquam deleniti libero
+            ad eligendi provident, dolorem quisquam. Quasi quo repellat iure magnam autem fugit, dignissimos iste
+            voluptatem aliquid distinctio sapiente! Alias sapiente adipisci eum dignissimos sequi, earum doloremque ea
+            voluptatum itaque porro facere libero dolore deserunt aliquam quaerat molestias hic. Vel, modi.</span>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <p class="mx-3"><b>Daha sonra 1990 yılında </b><i>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+        soluta! "</i> diyen <b>Mr.Bootstrap</b> yeni bir çağın başladığını bildirdi.</p>
+    <hr>
+    <p class="mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quis eius optio quod aliquam modi
+      maiores voluptatibus porro, atque consequatur soluta rem quasi eum doloribus saepe. Saepe reprehenderit vero
+      omnis? Quasi voluptas totam, sint natus odio fuga non commodi eos officia delectus expedita, id consectetur
+      praesentium. Officia delectus expedita nam!</p>
+    <br><br>
+    <hr>
+    <br>
+
+    <h3 style="text-align: end;" class="mx-3">Coca cola ile hayata sarıl !</h3>
+    <h4 class="mx-4 mt-1" style="text-align: end;">-<b>Mr.Barrack</b></h4>
+    <img src="img/writer.png" style="border-radius: 50%; height: 100px; float:right; margin-right: 50px;">
+  </main>
+  <br><br><br><br>
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-2" style="background-color:#a8363c">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">ZtRkTech.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+
+
+
+</html>
